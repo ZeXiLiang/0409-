@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title></title>
+<style>
+html {
+  box-sizing: border-box;
+font-family:font-family:"Microsoft Yahei";text-decoration:none;
+font-size: 62.5%;
+}
+
+body,body:before,body:after {
+  box-sizing: inherit;
+}
+    html {height: 100%;}
+    body {
+    background-color: #f60;
+    height: 100%;
+    }
+    body, div,img,p,span,ul,li,button {
+        margin: 0;
+        padding: 0;
+        outline:0;
+        border:0;
+        background:transparent;
+    }
+    ul,li {list-style-type:none;}
+    /*框模型修复*/
+
+
+    /*清除浮动*/
+    .clearfix:before,
+    .clearfix:after {
+    display: table;
+    content: " ";
+}
+    .clearfix:after {
+    clear: both;
+}
+     .clearfix{
+    *zoom: 1;
+}
+    .nav-Item {
+     
+        height: 5.0rem;
+        font-size: 0;
+       
+
+      width: 100%;
+        background-color: #5fc0cd;
+       
+    }
+
+
+     .nav-Item-return {
+    
+       
+      position: absolute;
+      left: 1.875rem;
+      
+       width: 2.0rem;
+       height: 4.875rem;
+       background: url("http://wp.yunxiu520.com/userfiles/01/image/0411/fanhui.png")no-repeat center;
+       background-size: 11px 19px;
+       
+    }
+
+
+
+       .nav-Item span{
+        text-align: center;
+        display: block;
+        line-height: 5.0rem;
+        color: #fff;
+        font-size: 2.0rem;
+        background-color: #5fc0cd;
+
+    }
+    .nav-title {
+     line-height: 5.0rem;
+       background: green;
+    }
+    .banner-Range {
+     
+    }
+    .banner-back{
+    
+    	 position: relative;
+      top: -0.0625rem;
+      height: 20rem;
+      
+      background:url("http://wp.yunxiu520.com/userfiles/01/image/0411/beijing.png")no-repeat;
+      background-size:100% 20rem;
+      padding: 0 0 0 1.875rem;
+     }
+     .banner-back:before {
+     	display: inline-block;
+     	content:"";
+     	vertical-align: middle;
+     	width: 1%;
+     	height:100%;
+
+     }
+ 
+    .banner-Character {
+       width: 84px;
+      height: 84px;
+
+
+    }
+    .banner-md{
+     display: inline-block;
+     vertical-align:middle;
+     margin: 0;
+     
+     
+     color: #fff;
+    
+
+ }
+
+    .banner-imgmd{
+      float: left;
+      margin-top:4.875rem;
+      width: 84px;
+      
+      
+      
+    	
+
+    }
+    .banner-name{
+     font-size: 16px;
+     margin-bottom:0.8125rem;
+
+    }
+    .banner-name span {
+    	margin-left: 1.5rem;
+    	font-size: 16px;
+
+    }
+    .banner-img{
+      display: inline;
+      padding-left:2.125rem;
+      background: url("http://wp.yunxiu520.com/userfiles/01/image/0411/zuobiao.png")no-repeat left center;
+      background-size: 1.125rem 1.375rem;
+      vertical-align: middle;
+      font-size: 0.875rem;
+      
+
+    }
+    .column-List {
+    	position: relative;
+    	top: -0.125rem;
+    	
+    	padding: 0 1.875rem;
+    	background-color: #fff;
+
+
+    }
+    .column-Top {
+    	position: relative;
+    	top:-0.125rem;
+    	padding-left:1.875rem;
+    	border-bottom: 1px solid #e1e5e7;
+    	background-color: #fff;
+    }
+     .column-Top span::before {
+     	content: '';
+     	position: absolute;
+     	top: -0.125rem;
+     	left: 0;
+     	height: 1.625rem;
+     	width: 0.1875rem;
+     	background-color: #5fc0cd;
+     }
+    .column-Top span {
+    	position: relative;
+
+    	color:#2a2a2a;
+    	font-weight: bold;
+    	font-size: 16px;
+    	height: 6.25rem;
+    	line-height: 6.1875rem;
+    	padding-left: 1.875rem;
+
+
+    }
+    .column-md {
+    	display: inline;
+
+
+    }
+    .column-md li{
+    	position: relative;
+    	padding: 2.1875rem;
+    	border-bottom: 1px solid #e1e5e7;
+    	line-height: 1.8125rem;
+      font-size: 14px;
+
+    }
+    .column-live {
+    	text-align: left;
+    	position: relative;
+    }
+    .column-live:before {
+      content: "";
+      display: inline-block;
+      width: 1%;
+      height: 100%;
+     vertical-align: middle;
+     }
+    .column-live  div {
+
+    	display: inline-block;
+        vertical-align: middle;
+         margin: 0;
+    	position: absolute;
+    	
+    	
+    	
+    	padding: 0 1.25rem;
+    	background: url("http://wp.yunxiu520.com/userfiles/01/image/0411/xing.png")no-repeat left center;
+    	background-size: 12px 12px;
+      
+    }
+    .bar-right {
+    	
+    	left: 7.5rem;
+
+    }
+
+    .bar-left::after {
+    	content: '';
+     	position: absolute;
+     	top: 0rem;
+     	left:4.5rem;
+     	height: 1.625rem;
+
+     	width: 1px;
+     	background-color: #e1e5e7;
+     	z-index: 200;
+    }
+   .column-md li .left {
+   	position: absolute;
+padding-right: 0.875rem;
+    	color:#999999;
+    	width: 4.875rem;
+    	border-right: 1px solid #e1e5e7;
+
+    }
+    .column-md li .right {
+    	display: inline-block;
+    	padding-left: 7rem;
+    }
+    .left-btn {
+    	position: relative;
+    	width: 50%;
+    	
+    	border:2px solid #5fc0cd;
+    	border-radius: 0.3125rem;
+    	line-height: 5.0rem;
+        margin: 0 2.5% 0 1.875rem;
+        color: #5fc0cd;
+        background-color: #fff;
+        
+        font-size: 16px;
+
+    }
+    .right-btn {
+    	position: relative;
+    	width: 50%;
+    	line-height: 5.0rem;
+    	border:2px solid #5fc0cd;
+    	border-radius: 0.3125rem;
+    	margin: 0 1.875rem 0 2.5%;
+    	background-color:#5fc0cd;
+
+    	color: #fff;
+    	font-size: 16px;
+
+    	
+
+    }
+    .footer {
+    	display: inline-flex;
+    	display: -webkit-inline-flex;
+    	position: fixed;
+    	left: 0;
+    	bottom: 2.1875rem;
+    	right: 0;
+    	text-align: center;
+    	
+    }
+    .model {
+    	height: 25.0rem;
+    }
+    .column-bottom {
+    	position: relative;;
+    	top: 0;
+    	border-bottom: 1px solid #e1e5e7;
+    }
+
+</style>
+</head>
+<body>
+    <div class="page">
+        <div class="nav-Item .clearfix">
+         <a class="nav-Item-return" href="#"></a>
+       
+        <span>个人主页</span>
+        
+
+        </div>
+
+        <div class="banner-Range clearfix">
+            <div class="banner-back">
+                <div class="banner-imgmd">
+                     <img src="http://wp.yunxiu520.com/userfiles/01/image/0411/renwu.png" class="banner-Character">
+                </div>
+                 <div class="banner-md">
+
+
+                 <div class="banner-name">
+                    高素雅
+                     <span>56岁</span>
+                 </div>
+                     <div class="banner-img">
+
+                    北京.裕华.果园
+                     </div>
+            </div>
+          
+
+
+
+            </div>
+           
+        </div>
+        <div class="column-Top">
+           <span>专业技能</span>
+           </div>
+      <div class="column-List">
+          
+           <ul class="column-md">
+            <li class="column-live">
+                <div class="bar-left">住家</div>
+                <div class="bar-right">不含餐</div>
+            </li>
+            <li>
+                <div class="left">从业年限</div>
+                <div class="right">0~3年</div>
+            </li>
+            <li>
+                <div class="left">工作时间</div>
+                <div class="right">全天</div>
+            </li>
+            <li>
+                <div class="left">服务价格</div>
+                <div class="right" style="color:#e26163;font-weight:bold;">25元/小时</div>
+            </li>
+            <li style="border: none;">
+                <div class="left">自我介绍</div>
+            <div class="right">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</div>
+            </li>
+        
+              
+           
+           </ul>
+      </div>
+      <div class="column-bottom"></div>
+      <div class="model"></div>
+
+          
+
+
+      <div class="footer">
+           <button class="left-btn">留言</button>
+           <button class="right-btn">电话联系</button>
+
+       </div>
+       
+           
+  
+    </div>
+    
+</body>
+</html>
